@@ -1,17 +1,17 @@
-# Copyright 1999-2010 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-libs/libkudzu/libkudzu-1.2.57.1.ebuild,v 1.11 2008/10/31 16:16:26 jer Exp $
+
+EAPI=7
 
 inherit rpm eutils toolchain-funcs flag-o-matic
 
-RPMREV="1"
 DESCRIPTION="Red Hat Hardware detection tools"
 HOMEPAGE="http://rhlinux.redhat.com/kudzu/"
-SRC_URI="mirror://fedora-dev/releases/10/Everything/source/SRPMS/kudzu-1.2.85-${RPMREV}.src.rpm"
+SRC_URI="https://kojipkgs.fedoraproject.org//vol/fedora_koji_archive00/packages/kudzu/1.2.85/1/src/kudzu-1.2.85-1.src.rpm"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~ppc ~ppc64 ~x86"
 IUSE="zlib"
 
 DEPEND="dev-libs/popt
@@ -24,11 +24,9 @@ RDEPEND="${DEPEND}
 S=${WORKDIR}/kudzu-1.2.85
 
 src_compile() {
-	if use zlib
-	then
+	if use zlib ; then
 		perl -pi -e 's| -lpci| -lz -lpci|g' Makefile
-	elif built_with_use --missing false sys-apps/pciutils zlib
-	then
+	elif ! use zlib ; then
 		die "You need to build with USE=zlib to match sys-apps/pcituils"
 	fi
 	# Fix the modules directory to match Gentoo layout.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		An intentionally designed broken web application based on REST API
+	</longdescription>
+	<upstream>
+		<changelog>https://github.com/payatu/Tiredful-API/commits/master</changelog>
+		<bugs-to>https://github.com/payatu/Tiredful-API/issues</bugs-to>
+	</upstream>
+</pkgmetadata>

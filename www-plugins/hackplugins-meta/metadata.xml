@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Collection of browser's plugins for application security testing
+	</longdescription>
+	<use>
+		<flag name="firefox">Install for firefox</flag>
+	</use>
+</pkgmetadata>

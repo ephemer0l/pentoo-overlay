@@ -1,8 +1,27 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI="5"
+EAPI="7"
+
+inherit linux-mod linux-info eutils compat-drivers-3.8-r1
+
+DESCRIPTION="Stable kernel pre-release wifi subsystem backport"
+HOMEPAGE="http://backports.wiki.kernel.org"
+
+LICENSE="GPL-2"
+SLOT="0"
+KEYWORDS=""
+
+# upstream versioning, ex.: 3.7-rc1-6
+#UPSTREAM_PVR="${PV//_/-}" && UPSTREAM_PVR="${UPSTREAM_PVR/-p/-}"
+# ex.: 3.7-rc1
+#UPSTREAM_PV=${UPSTREAM_PVR%-*}
+#SRC_URI="mirror://kernel/linux/kernel/projects/backports/stable/v${UPSTREAM_PVR}/${PN}-${UPSTREAM_PVR}-1.tar.xz"
+
+#_MY_PV="5.3-rc4"
+_MY_PV=""$(get_version_component_range 1-2)"-rc"$(get_all_version_components 3)""
+SRC_URI="https://cdn.kernel.org/pub/linux/kernel/projects/backports/stable/v"${_MY_PV}"/backports-"${_MY_PV}"-1.tar.xz"
+#SRC_URI="https://cdn.kernel.org/pub/linux/kernel/projects/backports/stable/v5.3-rc4/backports-5.3-rc4-1.tar.xz"
 
 # USE_EXPAND categories
 CPD_USE_EXPAND="wifi ethernet various"
@@ -14,21 +33,6 @@ CPD_USE_EXPAND_ethernet="alx atl1 atl1c atl1e atl2"
 
 # These are officially supported
 CPD_USE_EXPAND_various="i915"
-
-inherit linux-mod linux-info versionator eutils compat-drivers-3.8-r1
-
-# upstream versioning, ex.: 3.7-rc1-6
-UPSTREAM_PVR="${PV//_/-}" && UPSTREAM_PVR="${UPSTREAM_PVR/-p/-}"
-# ex.: 3.7-rc1
-UPSTREAM_PV=${UPSTREAM_PVR%-*}
-
-DESCRIPTION="Stable kernel pre-release wifi subsystem backport"
-HOMEPAGE="http://backports.wiki.kernel.org"
-SRC_URI="mirror://kernel/linux/kernel/projects/backports/stable/v${UPSTREAM_PVR}/${PN}-${UPSTREAM_PVR}-1-u.tar.xz"
-
-LICENSE="GPL-2"
-SLOT="0"
-KEYWORDS=""
 
 IUSE="atheros_obey_crda debugfs debug-driver full-debug injection livecd loadmodules noleds pax_kernel"
 

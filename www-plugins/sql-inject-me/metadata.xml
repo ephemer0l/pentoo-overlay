@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Exploit-Me tool used to test for SQL Injection vulnerabilities.
+	</longdescription>
+	<use>
+		<flag name="symlink_all_targets">Install for all browsers</flag>
+		<flag name="target_firefox">Install for firefox</flag>
+		<flag name="target_firefox-bin">Install for firefox-bin</flag>
+	</use>
+</pkgmetadata>

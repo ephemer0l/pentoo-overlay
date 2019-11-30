@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Linux kernel source for the ODROID-[UX]2 products
+	</longdescription>
+	<use>
+		<flag name="deblob">Deblob the kernel</flag>
+	</use>
+</pkgmetadata>

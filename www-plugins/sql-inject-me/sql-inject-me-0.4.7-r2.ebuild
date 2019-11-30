@@ -1,13 +1,12 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=5
+EAPI=7
 
 inherit mozilla-addon
 
 MOZ_FILEID="229626"
-DESCRIPTION="SQL Inject Me is the Exploit-Me tool used to test for SQL Injection vulnerabilities."
+DESCRIPTION="Exploit-Me tool used to test for SQL Injection vulnerabilities."
 HOMEPAGE="http://labs.securitycompass.com/exploit-me"
 SRC_URI="https://addons.mozilla.org/downloads/file/${MOZ_FILEID} -> ${P}.xpi"
 

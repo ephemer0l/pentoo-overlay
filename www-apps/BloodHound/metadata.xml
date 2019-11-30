@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Six Degrees of Domain Admin
+	</longdescription>
+	<upstream>
+		<changelog>https://github.com/BloodHoundAD/BloodHound/commits/master</changelog>
+		<bugs-to>https://github.com/BloodHoundAD/BloodHound/issues</bugs-to>
+	</upstream>
+</pkgmetadata>

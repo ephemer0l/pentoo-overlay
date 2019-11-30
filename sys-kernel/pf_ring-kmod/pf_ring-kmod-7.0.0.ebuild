@@ -1,6 +1,5 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Id$
 
 EAPI=6
 
@@ -15,7 +14,7 @@ SRC_URI="https://github.com/ntop/PF_RING/archive/${PV}.tar.gz -> ${MY_P}.tar.gz"
 LICENSE="GPL-2"
 SLOT="0"
 
-KEYWORDS="~amd64 ~x86 ~arm ~arm64"
+KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE=""
 
 S="${WORKDIR}/${MY_P}"

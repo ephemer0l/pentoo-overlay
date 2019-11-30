@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=7
 
 DESCRIPTION="Virtual for Linux kernel sources"
 SLOT="0"
@@ -16,13 +16,10 @@ RDEPEND="
 		sys-kernel/vanilla-sources
 		sys-kernel/ck-sources
 		sys-kernel/git-sources
-		sys-kernel/hardened-sources
 		sys-kernel/minipli-sources
 		sys-kernel/mips-sources
-		sys-kernel/openvz-sources
 		sys-kernel/pf-sources
 		sys-kernel/rt-sources
-		sys-kernel/tuxonice-sources
 		sys-kernel/xbox-sources
 		sys-kernel/zen-sources
 		sys-kernel/aufs-sources

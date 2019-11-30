@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		FxPnH is a Firefox addon adding support for Plug-n-Hack providers
+	</longdescription>
+	<use>
+		<flag name="symlink_all_targets">Install for all browsers</flag>
+		<flag name="target_firefox">Install for firefox</flag>
+		<flag name="target_firefox-bin">Install for firefox-bin</flag>
+	</use>
+</pkgmetadata>

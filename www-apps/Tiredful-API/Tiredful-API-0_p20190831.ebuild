@@ -1,7 +1,7 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 PYTHON_COMPAT=( python2_7 )
 inherit python-single-r1 git-r3
@@ -10,9 +10,9 @@ DESCRIPTION="An intentionally designed broken web application based on REST API"
 HOMEPAGE="https://github.com/payatu/Tiredful-API"
 EGIT_REPO_URI="https://github.com/payatu/Tiredful-API.git"
 
-LICENSE="none"
+LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~x86 ~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="dev-python/django[${PYTHON_USEDEP}]

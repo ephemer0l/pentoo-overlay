@@ -1,7 +1,7 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit mozilla-addon
 
@@ -15,7 +15,7 @@ SRC_URI="https://addons.mozilla.org/downloads/file/${MOZ_FILEID} -> ${P}.xpi"
 
 LICENSE="GPL-2"
 SLOT="0"
-#KEYWORDS="amd64 x86"
+KEYWORDS="~amd64 ~x86"
 IUSE="+symlink_all_targets target_firefox target_firefox-bin"
 
 RDEPEND="

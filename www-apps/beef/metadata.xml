@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Browser exploitation framework
+	</longdescription>
+	<use>
+		<flag name="dns">DNS Support</flag>
+		<flag name="network">Networking support</flag>
+		<flag name="notifications">Notification Support</flag>
+		<flag name="msf">Metasploit Framework plugin</flag>
+		<flag name="qrcode">QR Code support</flag>
+	</use>
+	<upstream>
+		<changelog>https://github.com/beefproject/beef/commits/master</changelog>
+		<doc>https://github.com/beefproject/beef/wiki</doc>
+		<bugs-to>https://github.com/beefproject/beef/issues</bugs-to>
+	</upstream>
+</pkgmetadata>

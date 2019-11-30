@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		A new type of network socket that improves packet capture speed.
+	</longdescription>
+	<upstream>
+		<changelog>https://github.com/ntop/PF_RING/releases</changelog>
+		<bugs-to>https://github.com/ntop/PF_RING/issues</bugs-to>
+	</upstream>
+</pkgmetadata>

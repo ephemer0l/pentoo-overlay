@@ -1,13 +1,12 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=5
+EAPI=7
 
 inherit mozilla-addon
 
 MOZ_FILEID="164511"
-DESCRIPTION="Firefox extension to display the Exif and IPTC data in local and remote JPEG images."
+DESCRIPTION="Firefox extension to display the Exif and IPTC data in JPEG images."
 HOMEPAGE="http://araskin.webs.com/exif/exif.html"
 SRC_URI="https://addons.mozilla.org/downloads/file/${MOZ_FILEID} -> ${P}.xpi"
 

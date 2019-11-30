@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Daemon for Advanced Configuration and Power Interface
+	</longdescription>
+	<use>
+		<flag name="pentoo">For Pentoo profile systems</flag>
+	</use>
+</pkgmetadata>

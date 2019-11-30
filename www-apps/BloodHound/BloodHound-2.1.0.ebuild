@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit eutils
 
@@ -12,7 +12,7 @@ SRC_URI="https://github.com/BloodHoundAD/BloodHound/archive/${PV}.tar.gz -> ${P}
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~ia32"
+KEYWORDS="~amd64 ~arm"
 IUSE=""
 
 DEPEND="net-libs/nodejs[npm]

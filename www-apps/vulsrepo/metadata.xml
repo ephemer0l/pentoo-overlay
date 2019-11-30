@@ -5,4 +5,8 @@
     <email>email@linxon.ru</email>
     <name>Yury Martynov</name>
   </maintainer>
+  <upstream>
+    <changelog>https://github.com/usiusi360/vulsrepo/commits/master</changelog>
+    <bugs-to>https://github.com/usiusi360/vulsrepo/pulls</bugs-to>
+  </upstream>
 </pkgmetadata>

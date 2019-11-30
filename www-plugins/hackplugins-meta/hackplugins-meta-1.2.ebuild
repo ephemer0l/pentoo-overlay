@@ -1,8 +1,7 @@
-# Copyright 1999-2014 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: blshkv$
 
-EAPI="5"
+EAPI=7
 
 DESCRIPTION="Collection of browser's plugins for application security testing"
 HOMEPAGE="http://pentoo.ch"

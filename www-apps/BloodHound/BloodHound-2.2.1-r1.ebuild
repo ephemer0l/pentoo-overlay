@@ -1,7 +1,7 @@
-# Copyright 1999-2018 Gentoo Authors
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
+EAPI=7
 
 inherit eutils
 
@@ -26,7 +26,7 @@ QA_FLAGS_IGNORED="usr/lib.*/BloodHound/.*\.so"
 
 src_prepare(){
 	epatch "${FILESDIR}/2.2.1-singlearch.patch"
-	mv ${WORKDIR}/node_modules ${S}
+	mv "${WORKDIR}/node_modules ${S}"
 	eapply_user
 }
 

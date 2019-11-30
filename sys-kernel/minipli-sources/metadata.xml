@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription lang="en">
+		Unofficial forward ports of the last publicly available grsecurity patch
+	</longdescription>
+	<use>
+		<flag name="deblob">Remove bundeled firmware</flag>
+		<flag name="injection">Add packet injection patches</flag>
+	</use>
+</pkgmetadata>
